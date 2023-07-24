@@ -1,0 +1,195 @@
+@font-face {
+  font-family: ppmori;
+  src: url("pp-mori-free-for-personal-use-v10 (1)/PP Mori - Free for Personal Use v1.0/PPMori-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+    overflow: hidden;
+    max-width: 100%;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: rgb(254, 252, 255);
+  font-family: ppmori;
+}
+/* all about nav  */
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  mix-blend-mode: difference;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+nav > img {
+  width: 35px;
+}
+.navham {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.navham .line {
+  width: 25px;
+  height: 1px;
+  background-color: white;
+}
+/* all about nav  */
+
+.page1 {
+  text-align: center;
+  position: relative;
+  /* height: 82dvh; */
+  overflow-x: hidden;
+}
+.page1 > h1 {
+  letter-spacing: -2.5px;
+  line-height: 3.1rem;
+  margin-top: 10rem ;
+  font-size: 3.1rem;
+  padding-inline: 0.3rem;
+  font-weight: 100;
+}
+.page1 > p {
+  margin-top: 1.8rem;
+  font-weight: 500;
+  padding-inline: 0.5rem;
+  /* color: white; */
+  line-height: 1.4rem;
+}
+.page1 > video {
+  max-width: 100%;
+  width: 50vw;
+  height: 35vh;
+  /* position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); */
+  margin-top: 7rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.page2 {
+  /* height: 100vh; */
+  padding-inline: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.page2>h5{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.page2>p{
+    font-size: 1.8rem;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    /* border-bottom-width: 100%; */
+}
+.page2 .cards{
+    margin-top: 1rem;
+}
+.page2 .card{
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+}
+.page2 .card button{
+    outline: none;
+    border: 1px solid black;
+    padding: 0.3rem 1rem;
+    background-color: transparent;
+    border-radius: 40px;
+    align-self: flex-end;
+}
+.page2 .card h6{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.page2 .card .wrapper{
+    font-weight: 100;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.learn-more{
+    border-radius: 40px;
+    padding-block: 0.2rem;
+    background-color: #edbfff !important;
+    margin-bottom: 2rem;
+    padding-inline: 2rem !important;
+    border: none !important;
+}
+
+
+
+.page3{
+    background-color: white;
+    color: black;
+    padding-inline: 1.6rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+}
+.page3>h2{
+    font-size: 2rem;
+}
+.page3 video, .page3 img{
+    max-width: 100%;
+}
+.page3 .cards{
+    margin-top: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page3 .card:nth-child(1){
+    align-self: flex-end;
+}
+.page3 .card:nth-child(2){
+    align-self: flex-start;
+}
+.page3 .card:nth-child(3){
+    align-self: flex-end;
+}
+.page3 .card:nth-child(4){
+    align-self: flex-start;
+}
+
+
+.page3 .cards h6{
+    font-size: 1.5rem;
+    margin-block: 1rem 0.5rem;
+    font-weight: 200;
+}
+.page3 .cards p{
+    font-weight: 100;
+}
+.page3 .card{
+    margin-bottom: 3rem;
+    width: 40vw;
+    margin-top: -30%;
+    object-fit: cover;
+}
+.page3>p{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
