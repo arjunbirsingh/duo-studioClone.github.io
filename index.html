@@ -6,12 +6,73 @@
     <title>duo-studioClone</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <style>
+    @media screen and (min-width: 1024px) {
+        .navham{
+            display: none;
+        }
+        nav>ul{
+            display: flex;
+            gap: 0.2rem;
+        }
+        nav ul li:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        nav .circleInNav{
+            display: block;
+        }
+      .page1 > h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+      }
+
+
+      .page2>h5,.page2>p{
+        display: inline;
+        margin-inline-end: 1.5rem;
+      }
+      .page2>p{
+        font-size: 2.6rem;
+        border: none;
+      }
+
+      .page3{
+        padding-right: 0;
+      }
+      .page3 video,.page3 img{
+        aspect-ratio: auto 720/1080;
+      }
+      .page3>h2{
+        font-size: 8rem;
+        max-width: 550px;
+      }
+
+      .page4>h2{
+        font-size: 8rem;
+        text-align: left;
+      }
+      footer>h3{
+        text-align: left;
+        font-size: 3rem;
+      }
+    }
+  </style>
   <body>
     <nav>
       <img
         src="https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg"
         alt="navLogo"
       />
+      <ul>
+        <li>Home,</li>
+        <li>Work,</li>
+        <li>Services,</li>
+        <li>Studio,</li>
+        <li>Journal,</li>
+        <li>Contact</li>
+      </ul>
+      <div class="circleInNav"></div>
       <div class="navham">
         <div class="line"></div>
         <div class="line"></div>
@@ -168,13 +229,13 @@
             <p>DC</p>
             <p>Maryland</p>
             <p>Virginia</p>
-        </div>
+          </div>
           <div class="right">
             <h5>Social</h5>
             <p>Instagram</p>
             <p>LinkedIn</p>
             <p>Facebook</p>
-        </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,3 +1,19 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* for video of .page3 */
+@media screen and (min-width:1297px){
+    .page3 .card{
+        margin-top: -10% !important;
+    }
+}
+/* for video of .page3 */
+
+
+
 @font-face {
   font-family: ppmori;
   src: url("pp-mori-free-for-personal-use-v10 (1)/PP Mori - Free for Personal Use v1.0/PPMori-Regular.otf");
@@ -14,6 +30,12 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+button,li,a{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
 }
 body,
 html {
@@ -34,6 +56,17 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 24px;
+}
+nav>ul{
+    display: none;
+}
+.circleInNav{
+    display: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
 }
 nav > img {
   width: 35px;
@@ -65,6 +98,8 @@ nav > img {
   font-weight: 100;
 }
 .page1 > p {
+  max-width: 400px;
+  margin: auto;
   margin-top: 1.8rem;
   font-weight: 500;
   padding-inline: 0.5rem;
@@ -119,6 +154,10 @@ nav > img {
   border-radius: 40px;
   align-self: flex-end;
 }
+.page2 .card img {
+  width: 100%;
+  max-width: 400px;
+}
 .page2 .card h6 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -126,6 +165,7 @@ nav > img {
   margin-top: 1rem;
 }
 .page2 .card .wrapper {
+  max-width: 400px;
   font-weight: 100;
   letter-spacing: -1px;
   display: flex;
@@ -153,18 +193,17 @@ nav > img {
 .page3 > h2 {
   font-size: 2rem;
 }
-.page3 video,
-.page3 img {
-  max-width: 100%;
+.page3 img,.page3 video {
+    max-width: 100%;
 }
 .page3 .cards {
-  margin-top: 50%;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .page3 .card:nth-child(1) {
+    margin-top: 3rem !important;
   align-self: flex-end;
 }
 .page3 .card:nth-child(2) {
@@ -225,7 +264,7 @@ footer {
   color: black;
 }
 footer h3 {
-    text-align: center;
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
   font-size: 1.7rem;
@@ -237,46 +276,46 @@ footer .start {
   font-size: 1.1rem;
 }
 
-footer .mail{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-block: 1.5rem 0.5rem;
-    margin-block: 2rem;
+footer .mail {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-block: 1.5rem 0.5rem;
+  margin-block: 2rem;
 }
-footer .mail p{
-    margin-bottom: 2.4rem;
-    font-size: 1.2rem;
-    font-weight: 400;
+footer .mail p {
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
-footer .wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-footer .mail input{
-    font-size: 1.2rem;
-    border: none;
-    background-color: #edbfff;
-    max-width: 50%;
+footer .mail input {
+  font-size: 1.2rem;
+  border: none;
+  background-color: #edbfff;
+  max-width: 50%;
 }
-footer .wrapper button{
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 0.25rem 1rem;
+footer .wrapper button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0.25rem 1rem;
 }
 
-footer a{
-    font-size: 1.2rem;
+footer a {
+  font-size: 1.2rem;
 }
-footer .wrapper:nth-child(2){
-    margin-top: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
+footer .wrapper:nth-child(2) {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
 }
-footer .wrapper h5{
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+footer .wrapper h5 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
