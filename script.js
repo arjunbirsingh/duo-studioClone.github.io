@@ -56,29 +56,28 @@ gsap.to(".page1 #line2", {
 gsap.to(".page2", {
   scrollTrigger: {
     trigger:".page2",
-    start: "top center",
-    end: "top center",
+    start: "top top",
+    end: "top top",
     scrub:2
   },
   backgroundColor: "white",
   color:"black"
 });
 
-gsap.to(".page2 img", {
-    scrollTrigger: {
-      trigger:".page2 .cards",
-    //   start: "top 50%",
-    //   end: "top 50%",
-      scrub:1
-    },
-    scale:"1.1"
-  });
+// gsap.to(".page2 img", {
+//     scrollTrigger: {
+//       trigger:".page2 .cards",
+//     //   start: "top 50%",
+//     //   end: "top 50%",
+//       scrub:1
+//     }
+//   });
   
 gsap.to(".page3", {
     scrollTrigger: {
       trigger:".page3",
-      start: "top center",
-      end: "top center",
+      start: "center center",
+      end: "center center",
       scrub:1
     },
     backgroundColor: "black",

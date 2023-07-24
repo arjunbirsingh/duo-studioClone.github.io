@@ -7,9 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-img{
-    overflow: hidden;
-    max-width: 100%;
+img {
+  overflow: hidden;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 body,
 html {
@@ -55,7 +59,7 @@ nav > img {
 .page1 > h1 {
   letter-spacing: -2.5px;
   line-height: 3.1rem;
-  margin-top: 10rem ;
+  margin-top: 10rem;
   font-size: 3.1rem;
   padding-inline: 0.3rem;
   font-weight: 100;
@@ -86,111 +90,193 @@ nav > img {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.page2>h5{
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.page2 > h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
-.page2>p{
-    font-size: 1.8rem;
-    letter-spacing: -1.5px;
-    text-transform: uppercase;
-    font-weight: 800;
-    padding-bottom: 1rem;
+.page2 > p {
+  font-size: 1.8rem;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  /* border-bottom-width: 100%; */
+}
+.page2 .cards {
+  margin-top: 1rem;
+}
+.page2 .card {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+.page2 .card button {
+  outline: none;
+  border: 1px solid black;
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+  border-radius: 40px;
+  align-self: flex-end;
+}
+.page2 .card h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.page2 .card .wrapper {
+  font-weight: 100;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.learn-more {
+  border-radius: 40px;
+  padding-block: 0.2rem;
+  background-color: #edbfff !important;
+  margin-bottom: 2rem;
+  padding-inline: 2rem !important;
+  border: none !important;
+}
+
+.page3 {
+  background-color: white;
+  color: black;
+  padding-inline: 1.6rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  border-bottom: 1px solid black;
+}
+.page3 > h2 {
+  font-size: 2rem;
+}
+.page3 video,
+.page3 img {
+  max-width: 100%;
+}
+.page3 .cards {
+  margin-top: 50%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.page3 .card:nth-child(1) {
+  align-self: flex-end;
+}
+.page3 .card:nth-child(2) {
+  align-self: flex-start;
+}
+.page3 .card:nth-child(3) {
+  align-self: flex-end;
+}
+.page3 .card:nth-child(4) {
+  align-self: flex-start;
+}
+
+.page3 .cards h6 {
+  font-size: 1.5rem;
+  margin-block: 1rem 0.5rem;
+  font-weight: 200;
+}
+.page3 .cards p {
+  font-weight: 100;
+}
+.page3 .card {
+  margin-bottom: 3rem;
+  width: 40vw;
+  margin-top: -30%;
+  object-fit: cover;
+}
+.page3 > p {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.page4 {
+  padding-block: 3rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+  border-block: 1px solid white;
+}
+.page4 > h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: -1px;
+  margin-bottom: 2.5rem;
+}
+.start {
+  background-color: #edbfff;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+footer {
+  padding: 2rem 1.5rem;
+  text-align: left;
+  background-color: #edbfff;
+  color: black;
+}
+footer h3 {
+    text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+footer .start {
+  background-color: white;
+  font-size: 1.1rem;
+}
+
+footer .mail{
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-bottom: 2rem;
-    /* border-bottom-width: 100%; */
+    padding-block: 1.5rem 0.5rem;
+    margin-block: 2rem;
 }
-.page2 .cards{
-    margin-top: 1rem;
-}
-.page2 .card{
-    border-bottom: 1px solid black;
-    margin-bottom: 2rem;
-}
-.page2 .card button{
-    outline: none;
-    border: 1px solid black;
-    padding: 0.3rem 1rem;
-    background-color: transparent;
-    border-radius: 40px;
-    align-self: flex-end;
-}
-.page2 .card h6{
+footer .mail p{
+    margin-bottom: 2.4rem;
     font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    font-weight: 400;
 }
-.page2 .card .wrapper{
-    font-weight: 100;
-    letter-spacing: -1px;
+footer .wrapper{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    justify-content: space-between;
 }
-.learn-more{
-    border-radius: 40px;
-    padding-block: 0.2rem;
-    background-color: #edbfff !important;
-    margin-bottom: 2rem;
-    padding-inline: 2rem !important;
-    border: none !important;
+footer .mail input{
+    font-size: 1.2rem;
+    border: none;
+    background-color: #edbfff;
+    max-width: 50%;
+}
+footer .wrapper button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.25rem 1rem;
 }
 
-
-
-.page3{
-    background-color: white;
-    color: black;
-    padding-inline: 1.6rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    border-bottom: 1px solid black;
+footer a{
+    font-size: 1.2rem;
 }
-.page3>h2{
-    font-size: 2rem;
-}
-.page3 video, .page3 img{
-    max-width: 100%;
-}
-.page3 .cards{
-    margin-top: 50%;
-    margin-bottom: 2rem;
+footer .wrapper:nth-child(2){
+    margin-top: 3.5rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
 }
-
-
-.page3 .card:nth-child(1){
-    align-self: flex-end;
-}
-.page3 .card:nth-child(2){
-    align-self: flex-start;
-}
-.page3 .card:nth-child(3){
-    align-self: flex-end;
-}
-.page3 .card:nth-child(4){
-    align-self: flex-start;
-}
-
-
-.page3 .cards h6{
-    font-size: 1.5rem;
-    margin-block: 1rem 0.5rem;
-    font-weight: 200;
-}
-.page3 .cards p{
-    font-weight: 100;
-}
-.page3 .card{
-    margin-bottom: 3rem;
-    width: 40vw;
-    margin-top: -30%;
-    object-fit: cover;
-}
-.page3>p{
-    margin-top: 4rem;
+footer .wrapper h5{
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
