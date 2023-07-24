@@ -56,8 +56,8 @@ gsap.to(".page1 #line2", {
 gsap.to(".page2", {
   scrollTrigger: {
     trigger:".page2",
-    start: "top 50%",
-    end: "top 50%",
+    start: "top center",
+    end: "top center",
     scrub:2
   },
   backgroundColor: "white",
@@ -72,5 +72,16 @@ gsap.to(".page2 img", {
       scrub:1
     },
     scale:"1.1"
+  });
+  
+gsap.to(".page3", {
+    scrollTrigger: {
+      trigger:".page3",
+      start: "top center",
+      end: "top center",
+      scrub:1
+    },
+    backgroundColor: "black",
+    color:"white"
   });
   
