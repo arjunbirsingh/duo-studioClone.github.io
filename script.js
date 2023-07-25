@@ -126,7 +126,16 @@ gsap.to(".page2", {
   backgroundColor: "white",
   color: "black",
 });
-
+gsap.from(".page2 .card",{scrollTrigger:{
+    trigger:".page2 .card",
+    scrub:3,
+    start:"top center",
+    end:"top center"
+},
+    opacity:0,
+    duration:2,
+    y:"50%"
+});
 // gsap.to(".page2 img", {
 //     scrollTrigger: {
 //       trigger:".page2 .cards",
@@ -145,4 +154,17 @@ gsap.to(".page3", {
   },
   backgroundColor: "black",
   color: "white",
+});
+gsap.from(".page3 .card",{scrollTrigger:{
+    trigger:".page3 .card",
+    scrub:3,
+    start:"top center",
+    end:"top center"
+},
+    // rotate:"20deg",
+    transform:"skew(2deg)",
+    y:"-30%",
+    opacity:0,
+    duration:2,
+    y:"50%"
 });
