@@ -1,4 +1,39 @@
 let body = document.body;
+let mouseChaser=document.querySelector(".mouseChaser");
+document.addEventListener("mousemove",function(){
+    mouseChaser.style.left=(event.clientX-7)+"px";
+    mouseChaser.style.top=(event.clientY-7)+"px";
+})
+let navul=document.querySelector("nav ul");
+navul.addEventListener("mouseenter",mouseChaserScaleUp);
+navul.addEventListener("mouseleave",mouseChaserScaleDown);
+function mouseChaserScaleUp(){
+    mouseChaser.style.transform="scale(2.53)";
+}
+function mouseChaserScaleDown(){
+    mouseChaser.style.transform="scale(1)";
+}
+let wobble=document.querySelectorAll(".wobble");
+wobble[0].addEventListener("mouseenter",function(){
+    mouseChaser.style.display="none";
+    wobble[0].style.backgroundColor="white";
+    wobble[0].style.color="black";
+});
+wobble[0].addEventListener("mouseleave",function(){
+    mouseChaser.style.display="block";
+    wobble[0].style.backgroundColor="#edbfff";
+    wobble[0].style.color="black";
+});
+wobble[1].addEventListener("mouseenter",function(){
+    mouseChaser.style.display="none";
+    wobble[1].style.backgroundColor="black";
+    wobble[1].style.color="white";
+});
+wobble[1].addEventListener("mouseleave",function(){
+    mouseChaser.style.display="block";
+    wobble[1].style.backgroundColor="white";
+    wobble[1].style.color="black";
+});
 
 // let tlPage1=gsap.timeline();
 gsap.from(".page1 .line", {

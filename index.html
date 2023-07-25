@@ -8,57 +8,62 @@
   </head>
   <style>
     @media screen and (min-width: 1024px) {
-        .navham{
-            display: none;
-        }
-        nav>ul{
-            display: flex;
-            gap: 0.2rem;
-        }
-        nav ul li:hover{
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        nav .circleInNav{
-            display: block;
-        }
+      .mouseChaser {
+        display: block;
+      }
+      .navham {
+        display: none;
+      }
+      nav > ul {
+        display: flex;
+        gap: 0.2rem;
+      }
+      nav ul li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      nav .circleInNav {
+        display: block;
+      }
       .page1 > h1 {
         font-size: 5rem;
         line-height: 5.5rem;
       }
 
-
-      .page2>h5,.page2>p{
+      .page2 > h5,
+      .page2 > p {
         display: inline;
         margin-inline-end: 1.5rem;
       }
-      .page2>p{
+      .page2 > p {
         font-size: 2.6rem;
         border: none;
       }
 
-      .page3{
+      .page3 {
         padding-right: 0;
       }
-      .page3 video,.page3 img{
+      .page3 video,
+      .page3 img {
         aspect-ratio: auto 720/1080;
       }
-      .page3>h2{
+      .page3 > h2 {
         font-size: 8rem;
         max-width: 550px;
       }
 
-      .page4>h2{
+      .page4 > h2 {
         font-size: 8rem;
         text-align: left;
       }
-      footer>h3{
+      footer > h3 {
         text-align: left;
         font-size: 3rem;
       }
     }
   </style>
   <body>
+    <div class="mouseChaser"></div>
     <nav>
       <img
         src="https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg"
@@ -116,7 +121,12 @@
               Brand identity, Brand Strategy, Logo Design, Messaging,
               Positioning, Art Direction, Brand Guidelines
             </p>
-            <button>Expand</button>
+            <button
+              onmouseenter="mouseChaserScaleUp()"
+              onmouseleave="mouseChaserScaleDown()"
+            >
+              Expand
+            </button>
           </div>
         </div>
         <div class="card">
@@ -130,7 +140,12 @@
               Web design, web development, UI/UX, wireframes, copywriting,
               E-Commerce, SEO, Analytics/Tracking
             </p>
-            <button>Expand</button>
+            <button
+              onmouseenter="mouseChaserScaleUp()"
+              onmouseleave="mouseChaserScaleDown()"
+            >
+              Expand
+            </button>
           </div>
         </div>
         <div class="card">
@@ -144,9 +159,20 @@
               Content Strategy, Graphic design, marketing design, colleateral,
               packaging, print design, illustration, motion graphics
             </p>
-            <button>Expand</button>
+            <button
+              onmouseenter="mouseChaserScaleUp()"
+              onmouseleave="mouseChaserScaleDown()"
+            >
+              Expand
+            </button>
           </div>
-          <button class="learn-more">Learn More</button>
+          <button
+            onmouseenter="mouseChaserScaleUp()"
+            onmouseleave="mouseChaserScaleDown()"
+            class="learn-more"
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </div>
@@ -202,23 +228,40 @@
         Browse our work and get inspired by the possibilities we can create
         together.
       </p>
-      <button class="learn-more">See All Work</button>
+      <button
+        onmouseenter="mouseChaserScaleUp()"
+        onmouseleave="mouseChaserScaleDown()"
+        class="learn-more"
+      >
+        See All Work
+      </button>
     </div>
     <div class="page4">
       <h2>Beyond logos and creative websites</h2>
-      <button class="start">Start a Project</button>
+      <button
+        onmouseenter="mouseChaserScaleUp()"
+        onmouseleave="mouseChaserScaleDown()"
+        class="start wobble"
+      >
+        Start a Project
+      </button>
     </div>
 
     <footer>
       <h3>let's create an experience as remarkable as your business</h3>
-      <button class="start">
+      <button class="start wobble">
         <a href="mailto:arjunpb2003@gmail.com">Get in Touch</a>
       </button>
       <div class="mail">
         <p>Don't miss out. Stay in the loop.</p>
         <div class="wrapper">
           <input placeholder="Your Email" type="email" />
-          <button>Subscribe</button>
+          <button
+            onmouseenter="mouseChaserScaleUp()"
+            onmouseleave="mouseChaserScaleDown()"
+          >
+            Subscribe
+          </button>
         </div>
       </div>
       <div class="socials">
