@@ -39,7 +39,24 @@
         font-size: 2.6rem;
         border: none;
       }
-
+      .page2wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+      .page2 .sideimg{
+        display: block;
+        width: 50vw;
+      }
+      /* .page2 .card {
+        max-width: 400px;
+      } */
+      .page2 .cards{
+        margin-top: 3rem;
+      }
+      .page2 .card img {
+        display: none;
+      }
       .page3 {
         padding-right: 0;
       }
@@ -103,138 +120,140 @@
         muted
       ></video>
     </div>
-    <div class="page2">
-      <h5>Capabilites</h5>
-      <p>
-        at duo studio, we have a passion of crafting personalized solutions,
-        including:
-      </p>
-      <div class="cards">
-        <div class="card">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/20696575c48be579c70798eacdea1854f171b7cb/fda6d/assets/services/services__branding@1152.webp"
-            alt=""
-          />
-          <h6>Branding</h6>
-          <div class="wrapper">
-            <p>
-              Brand identity, Brand Strategy, Logo Design, Messaging,
-              Positioning, Art Direction, Brand Guidelines
-            </p>
+    <div class="page2"><h5>Capabilites</h5>
+        <p>
+          at duo studio, we have a passion of crafting personalized solutions,
+          including:
+        </p>
+      <div class="page2wrapper">
+        <div class="sideimg"></div>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/20696575c48be579c70798eacdea1854f171b7cb/fda6d/assets/services/services__branding@1152.webp"
+              alt=""
+            />
+            <h6>Branding</h6>
+            <div class="wrapper">
+              <p>
+                Brand identity, Brand Strategy, Logo Design, Messaging,
+                Positioning, Art Direction, Brand Guidelines
+              </p>
+              <button
+                onmouseenter="mouseChaserScaleUp()"
+                onmouseleave="mouseChaserScaleDown()"
+              >
+                Expand
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/976ade89631d7339ed7fb42512bb115d455ac9e3/0744c/assets/services/services__websites@1152.webp"
+              alt=""
+            />
+            <h6>Websites</h6>
+            <div class="wrapper">
+              <p>
+                Web design, web development, UI/UX, wireframes, copywriting,
+                E-Commerce, SEO, Analytics/Tracking
+              </p>
+              <button
+                onmouseenter="mouseChaserScaleUp()"
+                onmouseleave="mouseChaserScaleDown()"
+              >
+                Expand
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/d8139cdf83ac971c8cbd2a793ed4465ece04ea45/6aca7/assets/services/services__content@1152.webp"
+              alt=""
+            />
+            <h6>Content</h6>
+            <div class="wrapper">
+              <p>
+                Content Strategy, Graphic design, marketing design, colleateral,
+                packaging, print design, illustration, motion graphics
+              </p>
+              <button
+                onmouseenter="mouseChaserScaleUp()"
+                onmouseleave="mouseChaserScaleDown()"
+              >
+                Expand
+              </button>
+            </div>
             <button
               onmouseenter="mouseChaserScaleUp()"
               onmouseleave="mouseChaserScaleDown()"
+              class="learn-more"
             >
-              Expand
+              Learn More
             </button>
           </div>
-        </div>
-        <div class="card">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/976ade89631d7339ed7fb42512bb115d455ac9e3/0744c/assets/services/services__websites@1152.webp"
-            alt=""
-          />
-          <h6>Websites</h6>
-          <div class="wrapper">
-            <p>
-              Web design, web development, UI/UX, wireframes, copywriting,
-              E-Commerce, SEO, Analytics/Tracking
-            </p>
-            <button
-              onmouseenter="mouseChaserScaleUp()"
-              onmouseleave="mouseChaserScaleDown()"
-            >
-              Expand
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/d8139cdf83ac971c8cbd2a793ed4465ece04ea45/6aca7/assets/services/services__content@1152.webp"
-            alt=""
-          />
-          <h6>Content</h6>
-          <div class="wrapper">
-            <p>
-              Content Strategy, Graphic design, marketing design, colleateral,
-              packaging, print design, illustration, motion graphics
-            </p>
-            <button
-              onmouseenter="mouseChaserScaleUp()"
-              onmouseleave="mouseChaserScaleDown()"
-            >
-              Expand
-            </button>
-          </div>
-          <button
-            onmouseenter="mouseChaserScaleUp()"
-            onmouseleave="mouseChaserScaleDown()"
-            class="learn-more"
-          >
-            Learn More
-          </button>
         </div>
       </div>
-    </div>
-    <div class="page3">
-      <h2>Featured Work</h2>
-      <div class="cards">
-        <div class="card">
-          <video
-            src="https://d33wubrfki0l68.cloudfront.net/a13ea7c2ca2f38134748966280e54af4340ce821/f976d/assets/home/projects_madegood-reduced.mp4"
-            playsinline
-            autoplay
-            loop
-            muted
-          ></video>
-          <h6>Made Good</h6>
-          <p>Brand Strategy,</p>
-          <p>Website</p>
-        </div>
-        <div class="card">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/d35ec8e58856def2dce8d8fec3e11bbb15943c70/a2198/assets/home/home__mgny-thumbnail.webp"
-            alt=""
-          />
-          <h6>MGNY</h6>
-          <p>Brand Strategy,</p>
-          <p>Website Creative</p>
-          <p>Direction, Illustration</p>
-        </div>
-        <div class="card">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/0c4a7971523f0f5143d6abec176eb8942fab0173/a2700/assets/home/home-casestudy-finturity.webp"
-            alt=""
-          />
-          <h6>Finturity</h6>
-          <p>Brand Strategy,</p>
-          <p>Website Identity, Website</p>
-          <p>Graphic Design</p>
-        </div>
-        <div class="card">
-          <video
-            src="https://d33wubrfki0l68.cloudfront.net/fa393730d68d920a27e751cae31b01eeb1f0bc5e/e8b08/assets/home/projects_cruefilms-reduced.mp4"
-            autoplay
-            playsinline
-            muted
-            loop
-          ></video>
-          <h6>Cruefilms</h6>
-          <p>Brand Stratrgy,</p>
-          <p>Website</p>
-        </div>
       </div>
-      <p>
-        Browse our work and get inspired by the possibilities we can create
-        together.
-      </p>
-      <button
-        onmouseenter="mouseChaserScaleUp()"
-        onmouseleave="mouseChaserScaleDown()"
-        class="learn-more"
-      >
-        See All Work
-      </button>
+      <div class="page3">
+        <h2>Featured Work</h2>
+        <div class="cards">
+          <div class="card">
+            <video
+              src="https://d33wubrfki0l68.cloudfront.net/a13ea7c2ca2f38134748966280e54af4340ce821/f976d/assets/home/projects_madegood-reduced.mp4"
+              playsinline
+              autoplay
+              loop
+              muted
+            ></video>
+            <h6>Made Good</h6>
+            <p>Brand Strategy,</p>
+            <p>Website</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/d35ec8e58856def2dce8d8fec3e11bbb15943c70/a2198/assets/home/home__mgny-thumbnail.webp"
+              alt=""
+            />
+            <h6>MGNY</h6>
+            <p>Brand Strategy,</p>
+            <p>Website Creative</p>
+            <p>Direction, Illustration</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/0c4a7971523f0f5143d6abec176eb8942fab0173/a2700/assets/home/home-casestudy-finturity.webp"
+              alt=""
+            />
+            <h6>Finturity</h6>
+            <p>Brand Strategy,</p>
+            <p>Website Identity, Website</p>
+            <p>Graphic Design</p>
+          </div>
+          <div class="card">
+            <video
+              src="https://d33wubrfki0l68.cloudfront.net/fa393730d68d920a27e751cae31b01eeb1f0bc5e/e8b08/assets/home/projects_cruefilms-reduced.mp4"
+              autoplay
+              playsinline
+              muted
+              loop
+            ></video>
+            <h6>Cruefilms</h6>
+            <p>Brand Stratrgy,</p>
+            <p>Website</p>
+          </div>
+        </div>
+        <p>
+          Browse our work and get inspired by the possibilities we can create
+          together.
+        </p>
+        <button
+          onmouseenter="mouseChaserScaleUp()"
+          onmouseleave="mouseChaserScaleDown()"
+          class="learn-more"
+        >
+          See All Work
+        </button></div>
     </div>
     <div class="page4">
       <h2>Beyond logos and creative websites</h2>

@@ -1,24 +1,25 @@
-
-::-webkit-scrollbar{
-    display: none;
+::selection {
+  background-color: transparent;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* for video of .page3 */
-@media screen and (min-width:1297px){
-    .page3 .card{
-        margin-top: -10% !important;
-    }
+@media screen and (min-width: 1297px) {
+  .page3 .card {
+    margin-top: -10% !important;
+  }
 }
 /* for video of .page3 */
-
-
 
 @font-face {
   font-family: ppmori;
   src: url("pp-mori-free-for-personal-use-v10 (1)/PP Mori - Free for Personal Use v1.0/PPMori-Regular.otf");
 }
 * {
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,11 +32,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
-button,li,a{
-    cursor: pointer;
+button,
+li,
+a {
+  cursor: pointer;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 body,
 html {
@@ -46,18 +49,18 @@ html {
   font-family: ppmori;
 }
 /* all about nav  */
-.mouseChaser{
-    pointer-events: none;
-    display: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #edbfff;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    transition: all 150ms;
-    mix-blend-mode: difference;
+.mouseChaser {
+  pointer-events: none;
+  display: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #edbfff;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  transition: all 150ms;
+  mix-blend-mode: difference;
 }
 nav {
   z-index: 999;
@@ -70,19 +73,19 @@ nav {
   justify-content: space-between;
   padding: 24px;
 }
-.wobble{
-    transition: all 200ms;
+.wobble {
+  transition: all 200ms;
 }
-nav>ul{
-    display: none;
+nav > ul {
+  display: none;
 }
-.circleInNav{
-    display: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
+.circleInNav {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
 }
 nav > img {
   width: 35px;
@@ -155,6 +158,10 @@ nav > img {
   margin-bottom: 2rem;
   /* border-bottom-width: 100%; */
 }
+.page2 .sideimg{
+    display: none;
+    transition: all 1s;
+}
 .page2 .cards {
   margin-top: 1rem;
 }
@@ -197,7 +204,9 @@ nav > img {
   padding-inline: 2rem !important;
   border: none !important;
 }
-
+.page2 .card:hover{
+    cursor: pointer;
+}
 .page3 {
   background-color: white;
   color: black;
@@ -209,8 +218,9 @@ nav > img {
 .page3 > h2 {
   font-size: 2rem;
 }
-.page3 img,.page3 video {
-    max-width: 100%;
+.page3 img,
+.page3 video {
+  max-width: 100%;
 }
 .page3 .cards {
   margin-bottom: 2rem;
@@ -219,7 +229,7 @@ nav > img {
 }
 
 .page3 .card:nth-child(1) {
-    margin-top: 3rem !important;
+  margin-top: 3rem !important;
   align-self: flex-end;
 }
 .page3 .card:nth-child(2) {
