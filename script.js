@@ -1,10 +1,14 @@
 // alert("this is a clone of duo-studio.co")
 let body = document.body;
 let mouseChaser = document.querySelector(".mouseChaser");
-document.addEventListener("mousemove", function () {
+// mouseChaser.style.left = "50%";
+// mouseChaser.style.top = "10%";
+document.addEventListener("mousemove", mouse);
+function mouse() {
   mouseChaser.style.left = event.clientX - 7 + "px";
   mouseChaser.style.top = event.clientY - 7 + "px";
-});
+  mouseChaser.style.backgroundColor="#edbfff";
+}
 let navul = document.querySelector("nav ul");
 navul.addEventListener("mouseenter", mouseChaserScaleUp);
 navul.addEventListener("mouseleave", mouseChaserScaleDown);
@@ -65,10 +69,10 @@ card[2].addEventListener("mouseover", function () {
 
 // let tlPage1=gsap.timeline();
 gsap.from(".page1 .line", {
-  rotate: "5deg",
-  duration: 1.5,
+  rotate: "50deg",
+  duration: 1.8,
   opacity: 0,
-  transformOrigin: "left",
+  transformOrigin: "left"
 });
 gsap.from(".page1 p", {
   opacity: 0,
